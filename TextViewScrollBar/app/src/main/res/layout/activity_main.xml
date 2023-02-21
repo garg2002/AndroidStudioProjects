@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/img_1"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="Virat Kohli was born on 5 November 1988 in Delhi to a Punjabi Khatri Hindu family.[6] His father, Prem Kohli, worked as a criminal lawyer and his mother, Saroj Kohli, is a housewife.[7] He has an older brother, Vikas, and an older sister, Bhawna.[8] According to his family, when he was three-years old, Kohli would pick up a cricket bat, start swinging it and ask his father to bowl at him.[9]
+            Virat Kohli was born on 5 November 1988 in Delhi to a Punjabi Khatri Hindu family.[6] His father, Prem Kohli, worked as a criminal lawyer and his mother, Saroj Kohli, is a housewife.[7] He has an older brother, Vikas, and an older sister, Bhawna.[8] According to his family, when he was three-years old, Kohli would pick up a cricket bat, start swinging it and ask his father to bowl at him.[9]
+"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/img" />
+
+
+</LinearLayout>
