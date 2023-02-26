@@ -1,45 +1,33 @@
 package com.example.multiscreen
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
+import com.example.multiscreen.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
-
+    private lateinit var binding: ActivityMainBinding
+    companion object {
+        const val KEY = "com.example.multiscreen.MianActivity"
+    }
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+            setContentView(view)
 
-        val T1 = findViewById<EditText>(R.id.edT1)
-        val T2 = findViewById<EditText>(R.id.edT2)
-        val T3 = findViewById<EditText>(R.id.edT3)
-        val T4 = findViewById<EditText>(R.id.edT4)
-        val buttonOrder = findViewById<Button>(R.id.btnOrder)
-
-        buttonOrder.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString(T1.text.toString())
-            bundle.putString(T2.text.toString())
-            bundle.putString(T3.text.toString())
-            bundle.putString(T4.text.toString())
-
-
+        binding.btnOrder.setOnClickListener {
+            val msg = binding.edT1.text.toString() + "" + binding.edT2.text.toString() + "" + binding.edT3.text.toString() + "" + binding.edT4.text.toString()
             val intent = Intent(this, MainActivity2::class.java)
-            intent.putExtras(bundle)
+            intent.putExtra(KEY, msg)
             startActivity(intent)
         }
 
 
     }
 
-    companion object {
-        val key: String?
-    }
 }
 
-private fun Bundle.putString(toString: String) {
-
-}

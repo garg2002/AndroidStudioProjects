@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#B7CA9336"
+    android:background="#7E0D33"
     tools:context=".MainActivity2">
 
     <TextView
@@ -16,7 +16,7 @@
         android:text="SG Cafe"
         android:textAlignment="center"
         android:textColor="#0F68AF"
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:textStyle="bold" />
 
     <TextView
@@ -24,11 +24,13 @@
         android:layout_width="match_parent"
         android:layout_height="208dp"
         android:layout_gravity="center"
-        android:layout_margin="40dp"
+        android:layout_marginTop="100dp"
         android:background="#45EADFEC"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="35dp"
-        android:textStyle="normal" />
+        android:textSize="35sp"
+        android:textStyle="normal"
+        android:padding="20dp"
+        />
 
 </LinearLayout>

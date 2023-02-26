@@ -1,26 +1,34 @@
 package com.example.functionalapp
 
+import android.Manifest.permission.CALL_PHONE
 import android.content.Intent
 import android.content.pm.PackageManager
+import androidx.core.content.ContextCompat
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import androidx.cardview.widget.CardView
-import androidx.core.app.ActivityCompat
+
 
 class SecondActivity : AppCompatActivity() {
-    val REQUEST_PHONE_CALL = 1
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
         val btn2 = findViewById<Button>(R.id.button2)
         btn2.setOnClickListener {
-            val value = Intent(Intent.ACTION_CALL)
-            value.data = Uri.parse("tel:9300253104")
-            startActivity(value)
+
+            val i = Intent(Intent.ACTION_DIAL);
+//            i.setData(Uri.parse("tel:0612312312"));
+//
+//Intent i = new Intent(Intent.ACTION_DIAL);
+            i.setData(Uri.parse("tel:0612312312"));
+            if (i.resolveActivity(getPackageManager()) != null) {
+                startActivity(i);
+            }
         }
+
 
 
         val i1 = findViewById<CardView>(R.id.card1)
