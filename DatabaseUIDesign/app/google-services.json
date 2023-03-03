@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "754706756273",
+    "project_id": "database-ui-design",
+    "storage_bucket": "database-ui-design.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754706756273:android:aa8c1f441d463984132890",
+        "android_client_info": {
+          "package_name": "com.example.databaseuidesign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754706756273-jmhd59bh9n4p3krqd7uqfi1sc0ql8v23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-469vuFpm4riJKXeUWYU7ONi8p67daT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754706756273-jmhd59bh9n4p3krqd7uqfi1sc0ql8v23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
